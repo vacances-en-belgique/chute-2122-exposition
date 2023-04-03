@@ -85,7 +85,7 @@ luz.addEventListener('click', () => {
 
   // Récupération de l'image et mise à jour de son src
   const img = lightbox.querySelector('img');
-  img.src = 'https://static.wixstatic.com/media/e9f423_ab20719999664264a5f7d5fb142c4488~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9f423_ab20719999664264a5f7d5fb142c4488~mv2.jpg';
+  img.src = 'https://static.wixstatic.com/media/e9f423_791208a754a34eddaa3925d831198fde~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/14_%20Chute%202122.jpg';
 
   // Fermeture de la lightbox au clic sur l'image
   img.addEventListener('click', () => {
