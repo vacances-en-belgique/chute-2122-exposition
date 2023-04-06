@@ -1,734 +1,244 @@
-html,
-body {
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   height: 100vh;
-}
 
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+/* Styles pour le mode normal */
+footer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-.loading-screen {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-}
-
-.bar {
-   position: absolute;
-   width: 100%;
-   height: 4%;
-   background:black;
-   transform: rotate(180deg);
-   transform-origin: top;
-}
-
-.bar-01 {
-   top: 4%;
-}
-
-.bar-02 {
-   top: 8%;
-}
-
-.bar-03 {
-   top: 12%;
-}
-
-.bar-04 {
-   top: 16%;
-}
-
-.bar-05 {
-   top: 20%;
-}
-
-.bar-06 {
-   top: 24%;
-}
-
-.bar-07 {
-   top: 28%;
-}
-
-.bar-08 {
-   top: 32%;
-}
-
-.bar-09 {
-   top: 36%;
-}
-
-.bar-10 {
-   top: 40%;
-}
-
-.bar-11 {
-   top: 44%;
-}
-
-.bar-12 {
-   top: 48%;
-}
-
-.bar-13 {
-   top: 52%;
-}
-
-.bar-14 {
-   top: 56%;
-}
-
-.bar-15 {
-   top: 60%;
-}
-
-.bar-16 {
-   top: 64%;
-}
-
-.bar-17 {
-   top: 68%;
-}
-
-.bar-18 {
-   top: 72%;
-}
-
-.bar-19 {
-   top: 76%;
-}
-
-.bar-20 {
-   top: 80%;
-}
-
-.bar-21 {
-   top: 84%;
-}
-
-.bar-22 {
-   top: 88%;
-}
-
-.bar-23 {
-   top: 92%;
-}
-
-.bar-24 {
-   top: 96%;
-}
-
-.bar-25 {
-   top: 100%;
-}
-
-.loader {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.loader-txt::before {
-   content: "Une";
-   font-size: 10em;
-   font-family: 'Afronaut';
-   font-weight: lighter;
-   color:white;
-   letter-spacing: -15px;
-   animation: txt 3s forwards 0.3s;
-}
-
-@keyframes txt {
-   0% {
-      content: "Une";
-   }
-
-   20% {
-      content: "exposition";
-   }
-  
-   40% {
-      content: "de";
-   }
-  
-   60% {
-      content: "tristán";
-   }
-
-   80% {
-      content: "rasson";
-   }
-
-   100% {
-      content: "";
-   }
-}
-
-.container {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-   background: url("hero.jpg") center center no-repeat;
-   background-size: cover;
-   z-index: -1;
-   overflow: hidden;
-}
-
-.container h1 {
-   width: 50%;
-   font-size: 3em;
-   font-weight: 400;
-   text-transform: uppercase;
-   line-height: 0.9em;
-   font-family: 'Helvetica';
-   color: #fff;
-}
-html,
-body {
-   margin: 0;
-   padding: 0;
-   font-family: "Afronaut";
-}
-
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-li, a {
-   list-style: none;
-   text-decoration: none;
-}
-
-.wrapper {
-   width: 100%;
-   height: 100vh;
-   background:white;
-  
-}
-
-.menu-btn {
-   position: fixed;
-   top: 0;
-   right: 0;
-   font-size: 4em;
-  color:black;
-   padding: 0.2em;
-   text-transform: lowercase;
-   cursor: crosshair;
-    z-index: 999;
-  line-height: 0.7;
-
-
-
-}
-
-.menu-container {
-   position: fixed;
-   width: 25%;
-   height: 100vh;
-   border-right: 1px solid #000;
 }
 
 ul {
-   margin-left: 1.0em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.project-section {
-   height: 65%;
-   border-bottom: 1px solid #000;
-   display: flex;
-   align-items: center;
+li {
+  display: inline-block;
 }
 
-.project-section h1 {
-   position: fixed;
-   top: 0;
-   left: 0;
-   font-size: 3.6em;
-   padding: 0.5em;
-   text-transform: lowercase;
-   cursor: crosshair;
+a {
+  font-family: 'Afronaut';
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: ne-resize;
 }
 
-.project-section ul > li {
-   margin-left: 1em;
-   font-family: "Afronaut";
-   font-size: 1.2em;
-   font-weight: lighter;
-   line-height: 2;
-   cursor: crosshair;
+a:hover {
+  color: red;  
 }
 
-.project-section ul > li span:hover {
-   font-style: italic;color:red;
-}
 
-.mail-section {
-   height: 14%;
-   border-bottom: 1px solid #000;
-   display: flex;
-   align-items: center;
-}
-
-.txt {
-   margin-left: 2.3em;
-   cursor: crosshair;
-}
-
-.txt p {
-   font-size: 0.6em;
-}
-
-.mail-section .txt p:hover {
-   font-style: italic;
-}
-
-.presentation-section {
-   height: 14%;
-   border-bottom: 1px solid #000;
-   display: flex;
-   align-items: center;
-}
-
-.txt {
-  font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-   margin-left: 2.3em;
-   cursor: crosshair;
-}
-
-.txt p {
+/* Styles pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
   
-   font-size: 0.6em;
+  a {
+    color: white;
+  }
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  margin-bottom: 60px;
 
-.social-section {
-   height: 7%;
-   display: flex;
-   align-items: center;
+
 }
 
-.social-section .txt p {
-   font-size: 0.6em;
+.column {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 4px;
 }
 
-.social-section .txt p span:hover {
-   font-style: italic;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
-html {
-   cursor: crosshair;
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-#lightbox {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  display: none;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ff0000;
+  font-family: 'Afronaut';
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#lightbox img {
-  max-width: 700px;
-  max-height: 700px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+.image-container:hover .overlay {
+  opacity: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 72px;
+  font-family: "Afronaut";
+
+}
+
+.container2 {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 36px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+
+}
 
 .custom-font {
-font-family: "altesse-std-24pt", sans-serif;
-     font-size: 2.6em;
-font-weight: 400;
-font-style: normal;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 72px;
+  font-family: "altesse-std-24pt", sans-serif;
+  cursor: ne-resize;
+
 }
 
-.mot-important {
-    font-size: 0px;
+.custom-font2 {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 144px;
+  font-family: "Afronaut";
+
+}
+
+.custom-font:hover {
+  color: red;
+}
+
+body {
+  cursor: crosshair;
+  cursor: url('chemin/vers/mon-curseur.png') 20 20, crosshair;
 }
 
 /* styles pour les écrans plus petits que 768px */
 @media (max-width: 767px) {
-  
-html,
-  
-  body {
-   font-family: "Afronaut";
-    display: flex;
-}
-
-
-.menu-btn {
-   font-size: 1em;
-  color:black;
-  display: flex;
-   writing-mode: vertical-rl;
-  text-orientation: sideways;
-}
-
-.menu-container {
-  display: block;
-   position: fixed;
-   width: 100%;
-  
-}
-
-
-.project-section {
-   height: 40%;
-   border-bottom: 1px solid #000;
-display: flex;
-  justify-content: center;
-    margin-top:16px;
-
-
-}
-
-
-.project-section ul > li {
-   font-family: "Afronaut";
-   font-size: 0.6em;
-     line-height: 1.4;
-display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
-}
-
-.mail-section {
-   height: 15%;
-     border-bottom: 1px solid #000;
-display: flex;
-  justify-content: center;
-}
-
-.txt {
-  display: center;
-   cursor: crosshair;
-  text-align: center;
-    margin: 0 auto;
-
-}
-
-.txt p {
-  font-family: "Afronaut";
-   font-size: 0.8em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail-section .txt p:hover {
-   font-style: italic;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.presentation-section {
-   height: 15%;
-   border-bottom: 1px solid #000;
-display: flex;
-  justify-content: center;
-}
-
-.txt {
- font-family: "Afronaut";
-   font-size: 0.8em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.txt p {
-  
-    font-family: "Afronaut";
-   font-size: 0.8em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.social-section {
-   height: 15%;
-   border-bottom: 1px solid #000;
-display: flex;
-  justify-content: center;
-}
-
-.social-section .txt p {
-  font-family: "Afronaut";
-   font-size: 0.8em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-section .txt p span:hover {
-    font-family: "Afronaut";
-   font-size: 0.8em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-html {
-   cursor: crosshair;
-}
-
-#lightbox {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  display: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#lightbox img {
-  max-width: 400px;
-  max-height: 400px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-
-
-.custom-font {
-font-family: "altesse-std-24pt", sans-serif;
-   font-size: 2em;
-     line-height: 1.7;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mot-important {
-    font-size: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
   html,
-body {
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   height: 100vh;
+  .custom-font2 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 100px;
+    font-family: "Afronaut";
+    text-align: center;
+  }
+
+footer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.loading-screen {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
+li {
+  display: inline-block;
 }
 
-.bar {
-   position: absolute;
-   width: 100%;
-   height: 4%;
-   background:black;
-   transform: rotate(180deg);
-   transform-origin: top;
+a {
+  font-family: 'Afronaut';
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: ne-resize;
+  font-size: 14px;
+
 }
 
-.bar-01 {
-   top: 4%;
+a:hover {
+  color: red;  
+}
+.container2 {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+
+}
+.custom-font {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 48px;
+  font-family: "altesse-std-24pt", sans-serif;
+  cursor: ne-resize;
 }
 
-.bar-02 {
-   top: 8%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+
 }
 
-.bar-03 {
-   top: 12%;
-}
-
-.bar-04 {
-   top: 16%;
-}
-
-.bar-05 {
-   top: 20%;
-}
-
-.bar-06 {
-   top: 24%;
-}
-
-.bar-07 {
-   top: 28%;
-}
-
-.bar-08 {
-   top: 32%;
-}
-
-.bar-09 {
-   top: 36%;
-}
-
-.bar-10 {
-   top: 40%;
-}
-
-.bar-11 {
-   top: 44%;
-}
-
-.bar-12 {
-   top: 48%;
-}
-
-.bar-13 {
-   top: 52%;
-}
-
-.bar-14 {
-   top: 56%;
-}
-
-.bar-15 {
-   top: 60%;
-}
-
-.bar-16 {
-   top: 64%;
-}
-
-.bar-17 {
-   top: 68%;
-}
-
-.bar-18 {
-   top: 72%;
-}
-
-.bar-19 {
-   top: 76%;
-}
-
-.bar-20 {
-   top: 80%;
-}
-
-.bar-21 {
-   top: 84%;
-}
-
-.bar-22 {
-   top: 88%;
-}
-
-.bar-23 {
-   top: 92%;
-}
-
-.bar-24 {
-   top: 96%;
-}
-
-.bar-25 {
-   top: 100%;
-}
-
-.loader {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.loader-txt::before {
-   content: "Une";
-   font-size: 5em;
-   font-family: 'Afronaut';
-   font-weight: lighter;
-   color:white;
-   letter-spacing: -15px;
-   animation: txt 3s forwards 0.3s;
-}
-
-@keyframes txt {
-   0% {
-      content: "Une";
-   }
-
-   20% {
-      content: "exposition";
-   }
+/* Styles pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
   
-   40% {
-      content: "de";
-   }
-  
-   60% {
-      content: "tristán";
-   }
-
-   80% {
-      content: "rasson";
-   }
-
-   100% {
-      content: "";
-   }
-}
-
-.container {
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-   background: url("hero.jpg") center center no-repeat;
-   background-size: cover;
-   z-index: -1;
-   overflow: hidden;
-}
-
-.container h1 {
-   width: 50%;
-   font-size: 1em;
-   font-weight: 400;
-   text-transform: uppercase;
-   line-height: 0.9em;
-   font-family: 'Helvetica';
-   color: #fff;
+  a {
+    color: white;
+  }
 }
 }
