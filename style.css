@@ -1,12 +1,10 @@
-
 /* Styles pour le mode normal */
 footer {
   width: 100%;
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   padding-bottom: 20px;
-
 }
 
 ul {
@@ -34,17 +32,51 @@ a:hover {
 }
 
 
-/* Styles pour le mode sombre */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-  
-  a {
-    color: white;
-  }
+/* Styles pour le mode normal */
+body {
+  /* Changer le fond en rouge */
+  background-color:black;
 }
+
+img {
+  padding: 0 20px; /* ou votre marge préférée */
+width: 500px;
+height: auto
+}
+
+nav {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 20px;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  font-family: 'Afronaut';
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  cursor: ne-resize;
+}
+
+a:hover {
+  color: red;  
+}
+
 
 .row {
   display: flex;
@@ -71,6 +103,8 @@ a:hover {
 .image-container {
   position: relative;
   display: inline-block;
+  color: white;
+
 }
 
 .overlay {
@@ -114,6 +148,8 @@ a:hover {
   box-sizing: border-box;
   font-size: 72px;
   font-family: "Afronaut";
+  color: white;
+
 
 }
 
@@ -121,6 +157,8 @@ a:hover {
     font-size: 24px;
   font-family: "Afronaut";
       text-align: center;
+      color: white;
+
 }
 .container2 {
   width: 100%;
@@ -128,6 +166,7 @@ a:hover {
   padding: 0 20px; /* ou votre marge préférée */
   box-sizing: border-box;
   font-size: 36px;
+  color: white;
   font-family: "neue-haas-grotesk-text", sans-serif;
 
 }
@@ -172,6 +211,10 @@ body {
     font-family: "Afronaut";
     text-align: center;
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
 
 footer {
   width: 100%;
@@ -196,7 +239,7 @@ li {
 
 a {
   font-family: 'Afronaut';
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 10px;
   cursor: ne-resize;
@@ -214,6 +257,8 @@ a:hover {
   box-sizing: border-box;
   font-size: 24px;
   font-family: "neue-haas-grotesk-text", sans-serif;
+  color: white;
+
 
 }
 .custom-font {
@@ -238,17 +283,5 @@ a:hover {
     font-size: 12px;
   font-family: "Afronaut";
       text-align: center;
-}
-
-/* Styles pour le mode sombre */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-  
-  a {
-    color: white;
-  }
 }
 }
