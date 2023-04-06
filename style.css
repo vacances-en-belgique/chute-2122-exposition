@@ -120,8 +120,8 @@ a:hover {
 .column figcaption{
     font-size: 24px;
   font-family: "Afronaut";
+      text-align: center;
 }
-
 .container2 {
   width: 100%;
   max-width: 100%;
@@ -232,6 +232,12 @@ a:hover {
   padding: 0 4px;
   justify-content: center;
 
+}
+  
+ .column figcaption{
+    font-size: 12px;
+  font-family: "Afronaut";
+      text-align: center;
 }
 
 /* Styles pour le mode sombre */
