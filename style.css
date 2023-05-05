@@ -1,82 +1,263 @@
+
+/* Loader */
+html,
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.loading-screen {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+}
+
+.loading {
+  overflow: hidden;
+}
+
+
+.bar {
+   position: absolute;
+   width: 100%;
+   height: 4%;
+   background:Black;
+   transform: rotate(180deg);
+   transform-origin: top;
+}
+
+.bar-01 {
+   top: 4%;
+}
+
+.bar-02 {
+   top: 8%;
+}
+
+.bar-03 {
+   top: 12%;
+}
+
+.bar-04 {
+   top: 16%;
+}
+
+.bar-05 {
+   top: 20%;
+}
+
+.bar-06 {
+   top: 24%;
+}
+
+.bar-07 {
+   top: 28%;
+}
+
+.bar-08 {
+   top: 32%;
+}
+
+.bar-09 {
+   top: 36%;
+}
+
+.bar-10 {
+   top: 40%;
+}
+
+.bar-11 {
+   top: 44%;
+}
+
+.bar-12 {
+   top: 48%;
+}
+
+.bar-13 {
+   top: 52%;
+}
+
+.bar-14 {
+   top: 56%;
+}
+
+.bar-15 {
+   top: 60%;
+}
+
+.bar-16 {
+   top: 64%;
+}
+
+.bar-17 {
+   top: 68%;
+}
+
+.bar-18 {
+   top: 72%;
+}
+
+.bar-19 {
+   top: 76%;
+}
+
+.bar-20 {
+   top: 80%;
+}
+
+.bar-21 {
+   top: 84%;
+}
+
+.bar-22 {
+   top: 88%;
+}
+
+.bar-23 {
+   top: 92%;
+}
+
+.bar-24 {
+   top: 96%;
+}
+
+.bar-25 {
+   top: 100%;
+}
+
+.loader {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loader-txt::before {
+   content: "Chute 2122";
+   font-size: 10em;
+   font-family: 'Afronaut';
+   font-weight: lighter;
+   color: #fff;
+   letter-spacing: -15px;
+   animation: txt 3s forwards 0.3s;
+}
+
+@keyframes txt {
+   0% {
+      content: "Chute 2122";
+   }
+
+   20% {
+      content: "Une";
+   }
+  
+   40% {
+      content: "Exposition";
+   }
+  
+   60% {
+      content: "de";
+   }
+
+   80% {
+      content: "Tristán";
+   }
+
+   100% {
+      content: "Rasson";
+   }
+}
+
+
 /* Styles pour le mode normal */
 footer {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-bottom: 20px;
+   width: 100%;
+   position: relative;
+   left: 0;
+   bottom: 0;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+ }
+ 
+ 
+ ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+
+ }
+ 
+ li {
+   height: 30px;
+   margin: 0 10px;
+ }
+ 
+ .padding-a {
+   font-family: 'Afronaut';
+   color: black;
+   text-decoration: none;
+   margin: 50px;
+   cursor: ne-resize;
+ }
+
+a:hover {
+  color: red;  
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
+.stile {
   font-family: 'Afronaut';
   color: black;
   text-decoration: none;
-  padding: 10px;
   cursor: ne-resize;
 }
-
-a:hover {
+b:hover {
   color: red;  
 }
 
-
-/* Styles pour le mode normal */
-body {
-  /* Changer le fond en rouge */
-  background-color:black;
-}
-
-img {
-  padding: 0 20px; /* ou votre marge préférée */
-width: 500px;
-height: auto
-}
-
-nav {
-  width: 100%;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  padding-bottom: 20px;
-
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
+.stile2 {
   font-family: 'Afronaut';
-  color: white;
+  color: black;
   text-decoration: none;
-  padding: 10px;
-  cursor: ne-resize;
 }
 
-a:hover {
-  color: red;  
-}
 
+/* Styles pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  a {
+    color: white;
+  }
+  .stile2 {
+   color: white;
+ }
+ .stile {
+color: white;
+ }
+ .padding-a {
+color: white;
+ }
+}
 
 .row {
   display: flex;
@@ -91,11 +272,11 @@ a:hover {
 .column {
   flex: 25%;
   max-width: 33%;
-  padding: 0 4px;
+  padding: 0 25px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 25px;
   vertical-align: middle;
   width: 100%;
 }
@@ -103,8 +284,6 @@ a:hover {
 .image-container {
   position: relative;
   display: inline-block;
-  color: white;
-
 }
 
 .overlay {
@@ -144,30 +323,45 @@ a:hover {
 .container {
   width: 100%;
   max-width: 100%;
-  padding: 0 20px; /* ou votre marge préférée */
+  padding: 0 50px; /* ou votre marge préférée */
   box-sizing: border-box;
   font-size: 72px;
   font-family: "Afronaut";
-  color: white;
-
 
 }
 
 .column figcaption{
-    font-size: 24px;
-  font-family: "Afronaut";
-      text-align: center;
-      color: white;
+    font-size: 18px;
+   font-family: "Afronaut";
+   text-align: center;
+}
 
+.custom-font69{
+  font-size: 12px;
+  font-family: "Afronaut";
+  text-align: center;
 }
 .container2 {
   width: 100%;
   max-width: 100%;
-  padding: 0 20px; /* ou votre marge préférée */
+  padding: 0 50px; /* ou votre marge préférée */
   box-sizing: border-box;
   font-size: 36px;
-  color: white;
   font-family: "neue-haas-grotesk-text", sans-serif;
+
+}
+
+.container3 {
+  width: 30%;
+  max-width: 100%;
+  padding: 0 50px; /* ou votre marge préférée */
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  border: 1px solid gray;
+  padding: 10px; /* ajouter une marge interne pour espacer le contenu de la bordure */
+  text-align: center;
+
 
 }
 
@@ -179,7 +373,7 @@ a:hover {
   font-size: 72px;
   font-family: "altesse-std-24pt", sans-serif;
   cursor: ne-resize;
-
+  text-decoration: none;
 }
 
 .custom-font2 {
@@ -210,42 +404,50 @@ body {
     font-size: 100px;
     font-family: "Afronaut";
     text-align: center;
-  }
-  img {
-    width: 250px;
-    height: auto;
+    color: white;
+
   }
 
-footer {
-  width: 100%;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
-  font-family: 'Afronaut';
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  cursor: ne-resize;
-  font-size: 24px;
-
-}
+  footer {
+   width: 100%;
+   position: relative;
+   bottom: 0;
+ }
+ 
+ ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+ }
+ 
+ li {
+   height: 20px;
+   margin: 5px;
+ }
+ 
+ a {
+   font-family: 'Afronaut';
+   color: white;
+   text-decoration: none;
+   padding: 15px;
+   cursor: pointer;
+   font-size: 10px;
+ }
+ 
+ .padding-a {
+   font-family: 'Afronaut';
+   color: white;
+   text-decoration: none;
+   margin: 20px;
+   cursor: pointer;
+   font-size: 10px;
+ }
+ 
+ 
 
 a:hover {
   color: red;  
@@ -259,8 +461,19 @@ a:hover {
   font-family: "neue-haas-grotesk-text", sans-serif;
   color: white;
 
-
 }
+
+.container3 {
+   width: 100%;
+   max-width: 100%;
+   padding: 0 20px; /* ou votre marge préférée */
+   box-sizing: border-box;
+   font-size: 24px;
+   font-family: "neue-haas-grotesk-text", sans-serif;
+   color: white;
+   border: 0px solid gray;
+ }
+
 .custom-font {
   width: 100%;
   max-width: 100%;
@@ -269,7 +482,19 @@ a:hover {
   font-size: 48px;
   font-family: "altesse-std-24pt", sans-serif;
   cursor: ne-resize;
+  color: white;
+
 }
+
+.stile2 {
+   color: white;
+ }
+
+ .stile {
+   color: white;
+   font-size: 24px;
+   text-decoration: none;
+ }
 
 .row {
   display: flex;
@@ -283,5 +508,196 @@ a:hover {
     font-size: 12px;
   font-family: "Afronaut";
       text-align: center;
+      color: white;
 }
+
+.custom-font69{
+  font-size: 8px;
+  color: white;
+  font-family: "Afronaut";
+  text-align: center;
+}
+
+/* Loader */
+html,
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: black;
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.loading-screen {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+}
+
+.loading {
+  overflow: hidden;
+}
+
+
+.bar {
+   position: absolute;
+   width: 100%;
+   height: 4%;
+   background:black;
+   transform: rotate(180deg);
+   transform-origin: top;
+}
+
+.bar-01 {
+   top: 4%;
+}
+
+.bar-02 {
+   top: 8%;
+}
+
+.bar-03 {
+   top: 12%;
+}
+
+.bar-04 {
+   top: 16%;
+}
+
+.bar-05 {
+   top: 20%;
+}
+
+.bar-06 {
+   top: 24%;
+}
+
+.bar-07 {
+   top: 28%;
+}
+
+.bar-08 {
+   top: 32%;
+}
+
+.bar-09 {
+   top: 36%;
+}
+
+.bar-10 {
+   top: 40%;
+}
+
+.bar-11 {
+   top: 44%;
+}
+
+.bar-12 {
+   top: 48%;
+}
+
+.bar-13 {
+   top: 52%;
+}
+
+.bar-14 {
+   top: 56%;
+}
+
+.bar-15 {
+   top: 60%;
+}
+
+.bar-16 {
+   top: 64%;
+}
+
+.bar-17 {
+   top: 68%;
+}
+
+.bar-18 {
+   top: 72%;
+}
+
+.bar-19 {
+   top: 76%;
+}
+
+.bar-20 {
+   top: 80%;
+}
+
+.bar-21 {
+   top: 84%;
+}
+
+.bar-22 {
+   top: 88%;
+}
+
+.bar-23 {
+   top: 92%;
+}
+
+.bar-24 {
+   top: 96%;
+}
+
+.bar-25 {
+   top: 100%;
+}
+
+.loader {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loader-txt::before {
+  content: "Chute 2122";
+  font-size: 0.8em;
+  font-family: 'Afronaut';
+  font-weight: lighter;
+  color: #fff;
+  letter-spacing: -4px;
+  animation: txt 3s forwards 0.3s;
+}
+
+@keyframes txt {
+   0% {
+      content: "Chute 2122";
+   }
+
+   20% {
+      content: "Une";
+   }
+  
+   40% {
+      content: "Expo";
+   }
+  
+   60% {
+      content: "de";
+   }
+
+   80% {
+      content: "Tristán";
+   }
+
+   100% {
+      content: "Rasson";
+   }
+}
+
 }
